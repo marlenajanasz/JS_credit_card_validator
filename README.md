@@ -1,4 +1,4 @@
-8. Napisz program, który na podstawie numeru karty odpowie czy ma doczynienia z Visą, MasterCard, a może AmericanExpress.
+Napisz program, który na podstawie numeru karty odpowie czy ma doczynienia z Visą, MasterCard, a może AmericanExpress.
 
 *Co wiemy o tych numerach tych kart?*
 
