@@ -42,16 +42,16 @@
 	border: black solid 1px;
 }
 .amex{
-	background-image: url("../amex.png");
+	background-image: url("../images/amex.png");
 }
 .master{
-	background-image: url("../master.png");
+	background-image: url("../images/master.png");
 }
 .visa{
-	background-image: url("../visa.png");
+	background-image: url("../images/visa.png");
 }
 .other{
-	background-image: url("../exclam.jpg")
+	background-image: url("../images/exclam.jpg")
 }
 .amex, .visa, .master, .other{
 	background-repeat: no-repeat;
