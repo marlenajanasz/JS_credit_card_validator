@@ -13,10 +13,8 @@
         }
 
         // 3 czy to visa
-        function canBeVisa(number) {
-          if(number.length === 15){
-            return false;
-          } else if (number[0] === '4'){
+      function canBeVisa(number) {
+          if(number.length !== 15 && number[0] === '4'){
             return true;
           } else {
             return false;
