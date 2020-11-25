@@ -54,13 +54,13 @@
 			cardType.classList.remove("amex");
 			cardType.classList.remove("other");
 		} else if (canBeAmerican(number)) {
-      cardType.classList.add("amex");
-      cardType.classList.remove("master");
+      			cardType.classList.add("amex");
+      			cardType.classList.remove("master");
 			cardType.classList.remove("visa");
 			cardType.classList.remove("other");
 		} else {
-      cardType.classList.add("other");
-      cardType.classList.remove("master");
+      			cardType.classList.add("other");
+      			cardType.classList.remove("master");
 			cardType.classList.remove("amex");
 			cardType.classList.remove("visa");
 		}
