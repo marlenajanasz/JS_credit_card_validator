@@ -16,9 +16,8 @@
       function canBeVisa(number) {
           if(number.length !== 15 && number[0] === '4'){
             return true;
-          } else {
+          } 
             return false;
-          }
         }
         //4 czy master card
         function canBeMaster(number) {
@@ -26,9 +25,8 @@
             return false;
           }  else if ('51'<=number.substring(0,2)<='55' || '2221'<=number.substring(0,4)<='2720'){
             return true;
-          } else {
+          } 
             return false;
-          }
         }
         //5 czy  to american
         function canBeAmerican(number) {
@@ -36,9 +34,8 @@
             return false;
           } else if (number.substring(0,2)==='34' || number.substring(0,2)==='37'){
             return true;
-          } else {
+          } 
             return false;
-          }
         }
         
 
