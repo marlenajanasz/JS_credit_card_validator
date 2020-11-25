@@ -41,25 +41,33 @@
 
         // ta wywołuje się na start 
         function checkCardNumber(number) {
-          const cardType = document.getElementById("cardType");
-          if (canBeNumber(number)) {
-            if (canBeVisa(number)) {
-            cardType.classList.add("visa");
-            }
-            else if (canBeMaster(number)) {
-              cardType.classList.add("master");
-            }
-            else if (canBeAmerican(number)) {
-              cardType.classList.add("amex");
-            }
-            else {
-              cardType.classList.add("other");
-            }
-          }
-          else {
-            alert("Niewłaściwa długość karty!")
-          }
-        }
+	const cardType = document.getElementById("cardType");
+	if (canBeNumber(number)) {
+		if (canBeVisa(number)) {
+			cardType.classList.add("visa");
+			cardType.classList.remove("master");
+			cardType.classList.remove("amex");
+			cardType.classList.remove("other");
+		} else if (canBeMaster(number)) {
+			cardType.classList.add("master");
+			cardType.classList.remove("visa");
+			cardType.classList.remove("amex");
+			cardType.classList.remove("other");
+		} else if (canBeAmerican(number)) {
+      cardType.classList.add("amex");
+      cardType.classList.remove("master");
+			cardType.classList.remove("visa");
+			cardType.classList.remove("other");
+		} else {
+      cardType.classList.add("other");
+      cardType.classList.remove("master");
+			cardType.classList.remove("amex");
+			cardType.classList.remove("visa");
+		}
+	} else {
+		alert("Niewłaściwa długość karty!");
+	}
+}
 
         function inputValue(){
           const input = document.querySelector("input");
