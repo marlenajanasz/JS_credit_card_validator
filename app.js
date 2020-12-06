@@ -77,7 +77,7 @@
           input.value = "";
         }
 
-        document.querySelector("button").onclick = inputValue;
+        document.getElementById("btn").onclick = inputValue;
 
 
 
