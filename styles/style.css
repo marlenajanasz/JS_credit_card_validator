@@ -1,78 +1,152 @@
-.container{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 90vh;
-	width: 90vw;
-	margin: 0;
-	padding: 0;
-}
-.card{
-	width: 50%;
-	height: 350px;
-	background-color: #282F61;
-	border-radius: 15px;
-}
-.innerContainer{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-}
-.cardNumber{
-	width: 75%;
-	height: 30px;
-	margin-right: 10px;
-}
-.cardNumber, button{
-	margin-top: 80px;
-}
-.cardNumber, #cardType{
-	background-color: #E0E1E8;
-}
-.anotherContainer{
-	display: flex;
-	justify-content: flex-end;
-	align-items: flex-end;
-	height: 150px;
-}
-#cardType{
-	margin-right: 50px;
-	width: 13%;
-	height: 48px;
-	border: black solid 1px;
-}
-.amex{
-	background-image: url("../images/amex.png");
-}
-.master{
-	background-image: url("../images/master.png");
-}
-.visa{
-	background-image: url("../images/visa.png");
-}
-.other{
-	background-image: url("../images/exclam.jpg")
-}
-.amex, .visa, .master, .other{
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 90vh;
+    width: 90vw;
+    margin: 0;
+    padding: 0;
 }
 
-@media all and (min-width: 1500px){
-	#cardType{
-		height: 55px;
-	}
+.text {
+    margin-bottom: 50px;
 }
-@media all and (max-width: 800px){
-	.innerContainer{
-		flex-direction: column;
-		align-items: flex-start;
-	}
-	.cardNumber{
-		margin-right: 0;
-	}
-	button{
-		width: 30%;
-		margin-top: 15px;
-	}
+
+li,
+p {
+    font-family: 'Secular One', sans-serif;
+}
+
+p {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+li {
+    line-height: 1.6em;
+}
+
+.card {
+    width: 50%;
+    height: 350px;
+    background-image: url("../images/background.jpg");
+    border-radius: 15px;
+    border-top: black solid 15px;
+    border-bottom: black solid 15px;
+}
+
+.inner-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.one {
+    justify-content: space-between;
+    height: 40px;
+    margin-top: 5px;
+}
+
+.card-header {
+    margin-left: 50px;
+}
+
+.icon {
+    height: 100%;
+    width: 10%;
+    margin-top: 5px;
+    margin-right: 20px;
+}
+
+img {
+    max-width: 80%;
+    height: auto;
+    color: #E0E1E8;
+}
+
+.two {
+    justify-content: center;
+}
+
+.card-number {
+    width: 75%;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.card-number,
+#btn {
+    margin-top: 70px;
+}
+
+.card-number,
+#cardType {
+    background-color: #E0E1E8;
+}
+
+#btn {
+    background-color: #000000;
+    color: #E0E1E8;
+}
+
+.another-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 150px;
+    margin-top: -50px;
+}
+
+#cardType {
+    margin-right: 50px;
+    width: 13%;
+    height: 48px;
+    border: black solid 1px;
+}
+
+.amex {
+    background-image: url("../images/amex.png");
+}
+
+.master {
+    background-image: url("../images/master.png");
+}
+
+.visa {
+    background-image: url("../images/visa.png");
+}
+
+.other {
+    background-image: url("../images/exclam.jpg")
+}
+
+.amex,
+.visa,
+.master,
+.other {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+@media all and (min-width: 1500px) {
+    #cardType {
+        height: 55px;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .inner-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .card-number {
+        margin-right: 0;
+    }
+    #btn {
+        width: 30%;
+        margin-top: 15px;
+    }
 }
