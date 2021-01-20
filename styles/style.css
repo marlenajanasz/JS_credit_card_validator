@@ -33,9 +33,13 @@ li {
     width: 50%;
     height: 350px;
     background-image: url("../images/background.jpg");
-    border-radius: 15px;
-    border-top: black solid 15px;
+    
+   
+}
+.card-border{
+	border-top: black solid 15px;
     border-bottom: black solid 15px;
+    border-radius: 15px;
 }
 
 .inner-container {
@@ -78,16 +82,16 @@ img {
 }
 
 .card-number,
-#btn {
+.btn {
     margin-top: 70px;
 }
 
 .card-number,
-#cardType {
+.card-type {
     background-color: #E0E1E8;
 }
 
-#btn {
+.btn {
     background-color: #000000;
     color: #E0E1E8;
 }
@@ -100,11 +104,13 @@ img {
     margin-top: -50px;
 }
 
-#cardType {
+.card-type {
     margin-right: 50px;
     width: 13%;
     height: 48px;
-    border: black solid 1px;
+}
+.card-type-border{
+	border: black solid 1px;
 }
 
 .amex {
@@ -132,7 +138,7 @@ img {
 }
 
 @media all and (min-width: 1500px) {
-    #cardType {
+    .card-type {
         height: 55px;
     }
 }
@@ -145,7 +151,7 @@ img {
     .card-number {
         margin-right: 0;
     }
-    #btn {
+    .btn {
         width: 30%;
         margin-top: 15px;
     }
