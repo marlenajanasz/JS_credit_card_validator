@@ -34,7 +34,7 @@ li {
     height: 350px;
     background-image: url("../images/background.jpg");
 }
-.card-border{
+.card-border {
     border-top: black solid 15px;
     border-bottom: black solid 15px;
     border-radius: 15px;
@@ -107,7 +107,7 @@ img {
     width: 13%;
     height: 48px;
 }
-.card-type-border{
+.card-type-border {
     border: black solid 1px;
 }
 
