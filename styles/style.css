@@ -33,11 +33,9 @@ li {
     width: 50%;
     height: 350px;
     background-image: url("../images/background.jpg");
-    
-   
 }
 .card-border{
-	border-top: black solid 15px;
+    border-top: black solid 15px;
     border-bottom: black solid 15px;
     border-radius: 15px;
 }
@@ -110,7 +108,7 @@ img {
     height: 48px;
 }
 .card-type-border{
-	border: black solid 1px;
+    border: black solid 1px;
 }
 
 .amex {
