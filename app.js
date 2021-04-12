@@ -41,7 +41,7 @@
 
         // ta wywołuje się na start 
         function checkCardNumber(number) {
-	const cardType = document.getElementById("cardType");
+	const cardType = document.querySelector('.card-type');
 	if (canBeNumber(number)) {
 		if (canBeVisa(number)) {
 			cardType.classList.add("visa");
