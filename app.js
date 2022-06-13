@@ -1,5 +1,5 @@
       
-// 1 sprawdzenie czy jest samymi cyframi  -> ale type number w html to sprawdza???
+// 1 sprawdzenie czy jest samymi cyframi 
   function onlyNumbers(number) {
     return /^\d+$/.test(number);
   };
